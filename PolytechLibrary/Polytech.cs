@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace PolytechLibrary
 {
-    internal class Polytech
+    public class Polytech
     {
         // fields
-        string name;
-        string address;
-        string city;
-        string region;
-        string postcode;
-        string phoneNumber;
-        string twitterAddress;
+        string name = "";
+        string address = "";
+        string city = "";
+        string region = "";
+        string postcode = "";
+        string phoneNumber = "";
+        string twitterAddress = "";
 
         // properties
         public string Name { get => name; set => name = value; }
@@ -41,10 +41,7 @@ namespace PolytechLibrary
         }
 
         // constructors
-        public Polytech()
-        {
-
-        }
+        
 
         // override a ToString() method
         public override string ToString()

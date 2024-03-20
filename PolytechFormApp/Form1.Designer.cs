@@ -42,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.okBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtName
@@ -156,11 +157,22 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Twitter";
             // 
+            // okBtn
+            // 
+            this.okBtn.Location = new System.Drawing.Point(181, 564);
+            this.okBtn.Name = "okBtn";
+            this.okBtn.Size = new System.Drawing.Size(108, 45);
+            this.okBtn.TabIndex = 14;
+            this.okBtn.Text = "OK";
+            this.okBtn.UseVisualStyleBackColor = true;
+            this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1329, 755);
+            this.Controls.Add(this.okBtn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -198,6 +210,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button okBtn;
     }
 }
 

@@ -16,5 +16,13 @@ namespace PolytechFormApp
         {
             InitializeComponent();
         }
+
+        private void okBtn_Click(object sender, EventArgs e)
+        {
+            var testpolytech = new Polytech();
+            testpolytech.Name = txtName.Text;
+            testpolytech.Address = txtAddress.Text;
+
+        }
     }
 }

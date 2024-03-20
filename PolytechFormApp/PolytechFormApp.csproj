@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PolytechLibrary\PolytechLibrary.csproj">
+      <Project>{baa53024-1256-49f5-9d62-f9da9f49fe9b}</Project>
+      <Name>PolytechLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
