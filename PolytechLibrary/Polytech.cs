@@ -8,6 +8,7 @@ namespace PolytechLibrary
 {
     internal class Polytech
     {
+        // fields
         string name;
         string address;
         string city;
@@ -16,6 +17,7 @@ namespace PolytechLibrary
         string phoneNumber;
         string twitterAddress;
 
+        // properties
         public string Name { get => name; set => name = value; }
         public string Address { get => address; set => address = value; }
         public string City { get => city; set => city = value; }
@@ -36,6 +38,26 @@ namespace PolytechLibrary
                 }
                 twitterAddress = value;
             }
+        }
+
+        // constructors
+        public Polytech()
+        {
+
+        }
+
+        // override a ToString() method
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(Name);
+            sb.AppendLine(Address);
+            sb.AppendLine(City);
+            sb.AppendLine(Region);
+            sb.AppendLine(PhoneNumber);
+            sb.AppendLine(TwitterAddress);
+            sb.AppendLine(Postcode.ToString());
+            return sb.ToString();
         }
     }
 }
