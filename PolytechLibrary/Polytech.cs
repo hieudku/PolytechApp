@@ -13,8 +13,8 @@ namespace PolytechLibrary
         string address = "";
         string city = "";
         string region = "";
-        string postcode = "";
-        string phoneNumber = "";
+        int postcode;
+        int phoneNumber;
         string twitterAddress = "";
 
         // properties
@@ -22,8 +22,8 @@ namespace PolytechLibrary
         public string Address { get => address; set => address = value; }
         public string City { get => city; set => city = value; }
         public string Region { get => region; set => region = value; }
-        public string Postcode { get => postcode; set => postcode = value; }
-        public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
+        public int Postcode { get => postcode; set => postcode = value; }
+        public int PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
         public string TwitterAddress
         {
             get
@@ -51,7 +51,7 @@ namespace PolytechLibrary
             sb.AppendLine(Address);
             sb.AppendLine(City);
             sb.AppendLine(Region);
-            sb.AppendLine(PhoneNumber);
+            sb.AppendLine(PhoneNumber.ToString());
             sb.AppendLine(TwitterAddress);
             sb.AppendLine(Postcode.ToString());
             return sb.ToString();
