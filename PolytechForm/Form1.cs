@@ -15,32 +15,41 @@ namespace PolytechForm
             {
                 var testpolytech = new Polytech();
                 //assign all field values from user inputs using propertestpolytech.Name = txtName.Text;
+                if (testpolytech == null)
+                {
+                    throw new Exception("Some fields are empty! Please fill");
+                }
                 testpolytech.Name = txtName.Text;
                 testpolytech.Address = txtAddress.Text;
                 testpolytech.City = txtCity.Text;
                 testpolytech.Region = txtRegion.Text;
-                if (Int32.TryParse(txtPhone.Text, out int PhoneNumber))
+
+                if (Int32.TryParse(txtPhone.Text, out int phone))
                 {
+
                     testpolytech.PhoneNumber = Int32.Parse(txtPhone.Text);
+                    txtPhone.Text.ToString().Trim();
                 }
                 else
                 {
-                    MessageBox.Show("Invalid phone number!");
-                    return;
+                    throw new Exception("Integer input for Phone number only.");
                 }
 
                 if (Int32.TryParse(txtPostcode.Text, out int postcode))
                 {
                     testpolytech.Postcode = Int32.Parse(txtPostcode.Text);
+                    txtPostcode.Text.ToString().Trim();
                 }
                 else
                 {
-                    MessageBox.Show("Invalid postcode");
-                    return;
+                    throw new Exception("Integer input for Postcode only.");
                 }
+
 
                 testpolytech.TwitterAddress = txtTwitter.Text;
                 MessageBox.Show(testpolytech.ToString());
+
+
             }
             catch (Exception ex)
             {
