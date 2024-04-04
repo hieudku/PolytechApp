@@ -16,6 +16,7 @@ namespace PolytechLibrary
         int postcode;
         int phoneNumber;
         string twitterAddress = "";
+        double GPA = 0.0;
 
         // properties
         public string Name { get => name; set => name = value; }
@@ -24,6 +25,7 @@ namespace PolytechLibrary
         public string Region { get => region; set => region = value; }
         public int Postcode { get => postcode; set => postcode = value; }
         public int PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
+       
         public string TwitterAddress
         {
             get
@@ -40,8 +42,10 @@ namespace PolytechLibrary
             }
         }
 
+        public double GPA1 { get => GPA; set => GPA = value; }
+
         // constructors
-        
+
 
         // override a ToString() method
         public override string ToString()

@@ -60,6 +60,17 @@ namespace PolytechForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnTGPA_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSGPA_Click(object sender, EventArgs e)
+        {
+
 
         }
     }

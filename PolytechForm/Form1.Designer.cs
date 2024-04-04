@@ -44,12 +44,14 @@
             txtPhone = new TextBox();
             txtTwitter = new TextBox();
             label8 = new Label();
+            btnTGPA = new Button();
+            btnSGPA = new Button();
             SuspendLayout();
             // 
             // okBtn
             // 
             okBtn.Location = new Point(112, 424);
-            okBtn.Margin = new Padding(2, 2, 2, 2);
+            okBtn.Margin = new Padding(2);
             okBtn.Name = "okBtn";
             okBtn.Size = new Size(235, 25);
             okBtn.TabIndex = 0;
@@ -130,7 +132,7 @@
             // txtName
             // 
             txtName.Location = new Point(112, 32);
-            txtName.Margin = new Padding(2, 2, 2, 2);
+            txtName.Margin = new Padding(2);
             txtName.Name = "txtName";
             txtName.Size = new Size(236, 23);
             txtName.TabIndex = 8;
@@ -138,7 +140,7 @@
             // txtAddress
             // 
             txtAddress.Location = new Point(112, 77);
-            txtAddress.Margin = new Padding(2, 2, 2, 2);
+            txtAddress.Margin = new Padding(2);
             txtAddress.Name = "txtAddress";
             txtAddress.Size = new Size(236, 23);
             txtAddress.TabIndex = 9;
@@ -146,7 +148,7 @@
             // txtCity
             // 
             txtCity.Location = new Point(112, 122);
-            txtCity.Margin = new Padding(2, 2, 2, 2);
+            txtCity.Margin = new Padding(2);
             txtCity.Name = "txtCity";
             txtCity.Size = new Size(236, 23);
             txtCity.TabIndex = 10;
@@ -154,7 +156,7 @@
             // txtRegion
             // 
             txtRegion.Location = new Point(112, 172);
-            txtRegion.Margin = new Padding(2, 2, 2, 2);
+            txtRegion.Margin = new Padding(2);
             txtRegion.Name = "txtRegion";
             txtRegion.Size = new Size(236, 23);
             txtRegion.TabIndex = 11;
@@ -162,7 +164,7 @@
             // txtPostcode
             // 
             txtPostcode.Location = new Point(112, 221);
-            txtPostcode.Margin = new Padding(2, 2, 2, 2);
+            txtPostcode.Margin = new Padding(2);
             txtPostcode.Name = "txtPostcode";
             txtPostcode.Size = new Size(236, 23);
             txtPostcode.TabIndex = 12;
@@ -170,7 +172,7 @@
             // txtPhone
             // 
             txtPhone.Location = new Point(112, 279);
-            txtPhone.Margin = new Padding(2, 2, 2, 2);
+            txtPhone.Margin = new Padding(2);
             txtPhone.Name = "txtPhone";
             txtPhone.Size = new Size(236, 23);
             txtPhone.TabIndex = 13;
@@ -178,7 +180,7 @@
             // txtTwitter
             // 
             txtTwitter.Location = new Point(112, 334);
-            txtTwitter.Margin = new Padding(2, 2, 2, 2);
+            txtTwitter.Margin = new Padding(2);
             txtTwitter.Name = "txtTwitter";
             txtTwitter.Size = new Size(236, 23);
             txtTwitter.TabIndex = 14;
@@ -192,11 +194,35 @@
             label8.TabIndex = 15;
             label8.Text = "Fields with * are required";
             // 
+            // btnTGPA
+            // 
+            btnTGPA.Location = new Point(395, 424);
+            btnTGPA.Margin = new Padding(2);
+            btnTGPA.Name = "btnTGPA";
+            btnTGPA.Size = new Size(150, 25);
+            btnTGPA.TabIndex = 16;
+            btnTGPA.Text = "GetTeacher GPA";
+            btnTGPA.UseVisualStyleBackColor = true;
+            btnTGPA.Click += btnTGPA_Click;
+            // 
+            // btnSGPA
+            // 
+            btnSGPA.Location = new Point(565, 424);
+            btnSGPA.Margin = new Padding(2);
+            btnSGPA.Name = "btnSGPA";
+            btnSGPA.Size = new Size(150, 25);
+            btnSGPA.TabIndex = 17;
+            btnSGPA.Text = "Get Student GPA";
+            btnSGPA.UseVisualStyleBackColor = true;
+            btnSGPA.Click += btnSGPA_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(893, 510);
+            Controls.Add(btnSGPA);
+            Controls.Add(btnTGPA);
             Controls.Add(label8);
             Controls.Add(txtTwitter);
             Controls.Add(txtPhone);
@@ -213,7 +239,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(okBtn);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -239,5 +265,7 @@
         private TextBox txtPhone;
         private TextBox txtTwitter;
         private Label label8;
+        private Button btnTGPA;
+        private Button btnSGPA;
     }
 }
